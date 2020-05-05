@@ -11,13 +11,14 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 
+require("dotenv").config();
 const firebase = require("firebase");
 require("firebase/firestore");
 
 var firebaseConfig = {
-  apiKey: "AIzaSyCO8TlleyoAlXdEAF8DAQ4FwBixlX5o9KU",
-  authDomain: "notes-262e9.firebaseapp.com",
-  databaseURL: "https://notes-262e9.firebaseio.com",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DB_URL,
   projectId: "notes-262e9",
   storageBucket: "notes-262e9.appspot.com",
   messagingSenderId: "208392444879",
