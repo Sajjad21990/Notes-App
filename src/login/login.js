@@ -186,7 +186,7 @@ class LoginComponent extends React.Component {
           history.push("/notes");
         },
         (err) => {
-          this.setState({ loginError: "err" });
+          this.setState({ loginError: err });
           message.error(err.message, [2]);
         }
       );
