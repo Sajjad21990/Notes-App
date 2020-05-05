@@ -1,38 +1,92 @@
-.App {
+#header {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+  margin: 5rem 0 2rem 0;
+}
+#header_2 {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+
+#loginCard {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#signupCard {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#signoutBtn {
+  position: fixed;
+  right: 5px;
+  top: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#signoutBtn:hover {
+  background-color: red;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes hue {
   from {
-    transform: rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  #header {
+    font-size: 3rem;
+  }
+  /* #header_2 {
+    font-size: 4rem;
+  } */
+}
+@media (max-width: 768px) {
+  #header {
+    font-size: 2.5rem;
+  }
+  /* #header_2 {
+    font-size: 3rem;
+  } */
+  #loginCard {
+    width: 400px;
+    margin-left: -50px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #header {
+    font-size: 2.5rem;
+  }
+  /* #header_2 {
+    font-size: 2rem;
+  } */
+
+  #loginCard {
+    width: 300px;
+    margin-left: -50px;
+  }
+
+  #signupCard {
+    width: 300px;
+    margin-left: -50px;
   }
 }

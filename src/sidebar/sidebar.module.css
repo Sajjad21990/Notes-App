@@ -1,0 +1,25 @@
+.addNoteBtn {
+  margin: 10px;
+}
+.viewAllBtn {
+  margin: 10px;
+}
+.addViewButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5rem 0px;
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+}
+@media screen and (max-width: 414px) {
+  .addNoteBtn {
+    margin: 2px;
+  }
+  .viewAllBtn {
+    margin: 2px;
+  }
+}
