@@ -17,6 +17,8 @@ require("firebase/firestore");
 
 const config = require("./config/key");
 
+console.log(process.env);
+
 var firebaseConfig = {
   apiKey: config.API_KEY,
   authDomain: "notes-262e9.firebaseapp.com",
