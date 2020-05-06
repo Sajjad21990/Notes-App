@@ -255,7 +255,7 @@ export default class SignupComponent extends React.Component {
             .set(userObj)
             .then(
               () => {
-                history.push("/");
+                history.push("/notes");
               },
               (dbErr) => {
                 console.log(dbErr);
