@@ -15,10 +15,10 @@ require("dotenv").config();
 const firebase = require("firebase");
 require("firebase/firestore");
 
-const config = require("./config/key");
+const Config = require("./Config/key");
 
 var firebaseConfig = {
-  apiKey: config.API_KEY,
+  apiKey: Config.API_KEY,
   authDomain: "notes-262e9.firebaseapp.com",
   databaseURL: "https://notes-262e9.firebaseio.com",
   projectId: "notes-262e9",
