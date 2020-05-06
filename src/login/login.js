@@ -203,10 +203,10 @@ class LoginComponent extends React.Component {
         provider = new firebase.auth.FacebookAuthProvider();
 
         break;
-      case "twitter":
-        provider = new firebase.auth.TwitterAuthProvider();
+      // case "twitter":
+      //   provider = new firebase.auth.TwitterAuthProvider();
 
-        break;
+      // break;
 
       default:
         break;
