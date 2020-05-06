@@ -15,10 +15,12 @@ require("dotenv").config();
 const firebase = require("firebase");
 require("firebase/firestore");
 
+const config = require("./config/key");
+
 var firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  databaseURL: process.env.REACT_APP_DB_URL,
+  apiKey: config.API_KEY,
+  authDomain: "notes-262e9.firebaseapp.com",
+  databaseURL: "https://notes-262e9.firebaseio.com",
   projectId: "notes-262e9",
   storageBucket: "notes-262e9.appspot.com",
   messagingSenderId: "208392444879",
